@@ -4,7 +4,7 @@ class Timetable:
 
     # 登録
     def add(self, name, day, period, room, teacher):
-        if not name:
+        if not name.strip():
             return "エラー: 科目名が空です"
 
         self.data[name] = {
